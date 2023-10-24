@@ -1,7 +1,6 @@
 .admin-container {
   position: relative;
   top: 55px;
-  border: 1px solid black;
   margin: 0px 5px;
 }
 .active {
