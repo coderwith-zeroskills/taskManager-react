@@ -15,7 +15,7 @@ export default function UserLandingPage({ setUserLoggedIn,note,setNote,setNotes,
       };
     return (
         <>
-            <AdminNavBar setAdminLoggedIn={setUserLoggedIn} myTask="My task" />
+            <AdminNavBar setAdminLoggedIn={setUserLoggedIn} myTask="Nikhil" />
             <div className="user-container">
                 <div style={{ fontSize: "1.5em", fontWeight: 500, }}>Notes</div>
 

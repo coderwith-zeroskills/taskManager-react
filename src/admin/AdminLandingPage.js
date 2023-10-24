@@ -5,10 +5,10 @@ import AdminNavBar from "./AdminNavBar"
 import UserNoteDisplay from "./UserNoteDisplay";
 export default function AdminLandingPage({ setAdminLoggedIn,notes,setNotes }) {
     // change to check on gitHub
-    const users = ['User 1', 'User 2', 'User 3']
-    const [activeUser, setActiveUser] = useState("User 1");
+    const users = ['Nikhil', 'User 2', 'User 3']
+    const [activeUser, setActiveUser] = useState("Nikhil");
     const handleUserClick = (user) => {
-        if(user=="User 1"){
+        if(user=="Nikhil"){
         setUserWiseNotes(notes)
 
         }
@@ -34,7 +34,7 @@ export default function AdminLandingPage({ setAdminLoggedIn,notes,setNotes }) {
                     {users.map((user,index) => {
                         return (
                             <li key={index}>
-                            <button style={{cursor:"pointer"}} className={`user-button ${activeUser === user ? 'active' : ''}`}
+                            <button style={{cursor:"pointer",width:"8em"}} className={`user-button ${activeUser === user ? 'active' : ''}`}
                                 onClick={() => handleUserClick(user)}>{user}</button>
                         </li>
                         )

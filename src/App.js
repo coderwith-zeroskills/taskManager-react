@@ -9,7 +9,7 @@ function App() {
     password:1234
   }
   const user={
-    email:"user@example.com",
+    email:"nikhil@example.com",
     password:1234
   }
   const [credentials, setCredentials] = useState({})
