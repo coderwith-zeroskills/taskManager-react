@@ -17,7 +17,7 @@ export default function UserLandingPage({ setUserLoggedIn,note,setNote,setNotes,
         <>
             <AdminNavBar setAdminLoggedIn={setUserLoggedIn} myTask="Nikhil" />
             <div className="user-container">
-                <div style={{ fontSize: "1.5em", fontWeight: 500, }}>Notes</div>
+                <div style={{ fontSize: "1.5em", fontWeight: 500,padding:"10px" }}>Notes</div>
 
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <input

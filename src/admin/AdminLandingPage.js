@@ -26,10 +26,10 @@ export default function AdminLandingPage({ setAdminLoggedIn,notes,setNotes }) {
       const[userWiseNotes,setUserWiseNotes]=useState(notes)
     return (
         <>
-            <AdminNavBar setAdminLoggedIn={setAdminLoggedIn} myTask="Users" />
+            <AdminNavBar setAdminLoggedIn={setAdminLoggedIn} myTask="Admin" />
 
             <div className="admin-container">
-                <div style={{marginLeft:"10px"}}>Select User</div>
+                <div style={{marginLeft:"10px",padding:"10px 10px 0px 10px",fontWeight:"500"}}>Select User</div>
                 <ul>
                     {users.map((user,index) => {
                         return (

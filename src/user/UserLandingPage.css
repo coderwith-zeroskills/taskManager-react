@@ -2,6 +2,7 @@
   position: relative;
   top: 55px;
   border: 1px solid black;
+  margin:0px 5px
 }
 
 .search-user {
@@ -25,10 +26,12 @@
     background-color: rgba(70, 127, 207, 0.25);
     border: 1px solid rgb(242,242,242);
     border-radius: 5px;
+    border: 2px solid #7db9f0
 
 }
 .add-button{
   margin: 20px;
+  padding: 10px;
 }
 .note-container {
   display: flex;
