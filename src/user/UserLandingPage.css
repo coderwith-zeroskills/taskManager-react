@@ -1,0 +1,52 @@
+.user-container {
+  position: relative;
+  top: 55px;
+  border: 1px solid black;
+}
+
+.search-user {
+  width: 100%;
+  padding: 0.2em;
+  border: none;
+  margin:20px 10px;
+  border: 1px solid #5840bb;
+  border-radius: 10px;
+  outline: none;
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(70, 127, 207, 0.25);
+    border-color: #0072ff;
+  }
+}
+.search-button{
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: rgba(70, 127, 207, 0.25);
+    border: 1px solid rgb(242,242,242);
+    border-radius: 5px;
+
+}
+.add-button{
+  margin: 20px;
+}
+.note-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* You can adjust the width as needed */
+}
+
+.note {
+  flex: 200%;
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  flex: 10%;
+}
+
+.note-container button {
+  flex: 20%;
+  margin-right: 5px;
+}

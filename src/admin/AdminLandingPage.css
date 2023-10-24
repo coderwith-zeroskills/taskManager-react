@@ -1,0 +1,24 @@
+
+    .admin-container{
+        position: relative;
+        top: 55px;
+        border: 1px solid black;
+    }
+    .active{
+        background-color: blue;
+    }
+    .user-button{
+
+        
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+.active {
+    background-color: #007bff; /* Background color for the active button */
+    color: #fff; /* Text color for the active button */
+    /* Add any other styles for active buttons */
+  }
