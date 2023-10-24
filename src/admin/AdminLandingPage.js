@@ -4,6 +4,7 @@ import "./AdminLandingPage.css"
 import AdminNavBar from "./AdminNavBar"
 import UserNoteDisplay from "./UserNoteDisplay";
 export default function AdminLandingPage({ setAdminLoggedIn,notes,setNotes }) {
+    // change to check on gitHub
     const users = ['User 1', 'User 2', 'User 3']
     const [activeUser, setActiveUser] = useState("User 1");
     const handleUserClick = (user) => {
