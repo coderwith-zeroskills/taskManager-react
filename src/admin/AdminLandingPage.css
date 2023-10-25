@@ -1,7 +1,9 @@
 .admin-container {
   position: relative;
-  top: 55px;
+  top: 50px;
   margin: 0px 5px;
+  height: 100vh;
+    background-color: #cfcfcf;
 }
 .active {
   background-color: blue;

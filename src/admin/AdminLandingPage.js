@@ -29,14 +29,16 @@ export default function AdminLandingPage({ setAdminLoggedIn, notes, setNotes }) 
             <AdminNavBar setAdminLoggedIn={setAdminLoggedIn} myTask="Admin" />
 
             <div className="admin-container">
-                <div style={{ marginLeft: "10px", padding: "10px 10px 0px 10px", fontWeight: "500" }}>Select User</div>
-                <ul>
+                <div style={{ marginLeft: "10px", padding: "10px 10px 0px 10px", fontWeight: "500",textDecoration:"underline",padding:"20px" }}>Select User : </div>
+                <ul style={{display:"flex",justifyContent:"flex-start"}}>
                     {users.map((user, index) => {
                         return (
-                            <li key={index}>
-                                <button style={{ cursor: "pointer", width: "8em" }} className={`user-button ${activeUser === user ? 'active' : ''}`}
-                                    onClick={() => handleUserClick(user)}>{user}</button>
-                            </li>
+                           
+                                <li key={index} style={{marginLeft:"1.5em"}}>
+                                    <button style={{ cursor: "pointer", width: "8em", }} className={`user-button ${activeUser === user ? 'active' : ''}`}
+                                        onClick={() => handleUserClick(user)}>{user}</button>
+                                </li>
+                          
                         )
                     })}
 
