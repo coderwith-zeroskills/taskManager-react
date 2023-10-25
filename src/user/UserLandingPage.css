@@ -1,7 +1,11 @@
 .user-container {
   position: relative;
   top: 55px;
-  margin:0px 5px
+  margin:30px auto;
+  width:50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 80vh;
+  background-color: white;
 }
 
 .search-user {
@@ -19,6 +23,9 @@
     border-color: #0072ff;
   }
 }
+.delete-button{
+  margin-left: 15px;
+}
 .search-button{
     margin-right: 20px;
     cursor: pointer;
@@ -30,18 +37,22 @@
 }
 .add-button{
   margin: 20px;
-  padding: 10px;
+  padding: 5px;
+  position: absolute;
+  right:0px;
 }
 .note-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* You can adjust the width as needed */
+    margin-right: 1px;
+    width: 27em;
 }
 
 .note {
   flex: 200%;
   padding: 10px;
+  margin-bottom: -7px;
   /* margin-left: 50px; */
 }
 
@@ -52,4 +63,8 @@ input[type="checkbox"] {
 .note-container button {
   flex: 20%;
   margin-right: 5px;
+}
+.hori{
+  width: 90%;
+  margin-right: 10em;
 }

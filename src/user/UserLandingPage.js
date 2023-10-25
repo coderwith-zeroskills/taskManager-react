@@ -17,17 +17,17 @@ export default function UserLandingPage({ setUserLoggedIn, note, setNote, setNot
         note.toLowerCase().includes(searchTerm.toLowerCase())
     );
     return (
-        <>
+        <div style={{backgroundColor:"#cfcfcf",height:"100vh"}}>
             <AdminNavBar setAdminLoggedIn={setUserLoggedIn} myTask="Nikhil" />
             <div className="user-container">
-                <div style={{ fontSize: "1.5em", fontWeight: 500, padding: "10px" }}>Notes</div>
+                <div style={{ fontSize: "1.5em", fontWeight: 500, padding: "10px",marginLeft:"1em" }}>Notes</div>
 
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <input
                         type="search"
                         placeholder="Search"
                         className="search-user"
-                        style={{ backgroundColor: "#f2f2f2", width: "90%" }}
+                        style={{ backgroundColor: "#f2f2f2", width: "90%",paddingLeft:"10px" }}
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
@@ -37,6 +37,8 @@ export default function UserLandingPage({ setUserLoggedIn, note, setNote, setNot
                     <button className="search-button add-button" onClick={handleOpen}>Add Note</button>
                 </div>
                 {/* <hr></hr> */}
+                <div style={{marginTop:"5em"}}>
+
                 <ul>
                     {filteredNotes.map((para, index) => {
                         return (
@@ -46,21 +48,23 @@ export default function UserLandingPage({ setUserLoggedIn, note, setNote, setNot
                                         {para}
                                     </div>
                                     <input type="checkbox" id="myCheckbox" />
-                                    <button className="search-button" onClick={() => handleDeleteNote(index)} >Delete</button>
+                                    <button className="search-button delete-button" onClick={() => handleDeleteNote(index)} >Delete</button>
                                 </div>
-                                <hr></hr>
+                                <hr className="hori"></hr>
                             </li>
 
                         )
                     })}
                 </ul>
+                </div>
+               
 
 
 
             </div>
             <NoteAddModal open={open} setOpen={setOpen} handleClose={handleClose} note={note} setNote={setNote} setNotes={setNotes} notes={notes} />
 
-        </>
+        </div>
     )
 }
 
